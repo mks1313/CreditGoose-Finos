@@ -19,7 +19,7 @@ creditgoose-finos/
 ### 1. Clone the repository
 
 ```
-git clone https://github.com/finos-labs/creditgoose.git
+git@github.com:mks1313/CreditGoose-Finos.git
 cd creditgoose
 ```
 
