@@ -1,44 +1,57 @@
-# Contributing to {project name}
+# Contributing to CreditGoose
 
-{project name} is [Apache 2.0 licensed](LICENSE) and accepts contributions via git pull requests.  Each commit must include a DCO line in the git commit message:
+CreditGoose is [Apache 2.0 licensed](./LICENSE) and accepts contributions via GitHub pull requests.  
+Each commit must include a DCO line in the git commit message:
 
-`Signed-off-by: GitHub User Name <your.email@example.com>`
+```
+Signed-off-by: Maksim Marinov mg.marinov@gmx.es
+```
 
-This sign-off means you agree the commit satisfies the
-[Developer Certificate of Origin (DCO).](https://developercertificate.org/)
+This sign-off means you agree that your commit satisfies the [Developer Certificate of Origin (DCO)](https://developercertificate.org/).  
+All PRs must be signed. We enforce this via the [DCO GitHub bot](https://probot.github.io/apps/dco/).
 
-## Contributing Issues
+---
 
-### Prerequisites
+## 🐞 Contributing Issues
 
-* [ ] Have you [searched for duplicates](https://github.com/finos-labs/{project name}/issues?utf8=%E2%9C%93&q=)?  A simple search for exception error messages or a summary of the unexpected behaviour should suffice.
-* [ ] Are you running the latest version?
-* [ ] Are you sure this is a bug or missing capability?
+Before submitting an issue, please:
 
-### Raising an Issue
-* Create your issue [here](https://github.com/finos-labs/{project name}/issues/new).
-* New issues contain two templates in the description: bug report and enhancement request. Please pick the most appropriate for your issue, **then delete the other**.
-  * Please also tag the new issue with either "Bug" or "Enhancement".
-* Please use [Markdown formatting](https://help.github.com/categories/writing-on-github/)
-liberally to assist in readability.
-  * [Code fences](https://help.github.com/articles/creating-and-highlighting-code-blocks/) for exception stack traces and log entries, for example, massively improve readability.
+- [ ] Search for duplicates: https://github.com/mks1313/CreditGoose-Finos.git
+- [ ] Confirm you're running the latest version
+- [ ] Ensure it's really a bug or missing feature
 
-## Contributing Pull Requests (Code & Docs)
-To make review of PRs easier, please:
+### Creating an Issue
 
- * Please make sure your PRs will merge cleanly - PRs that don't are unlikely to be accepted.
- * For code contributions, follow the existing code layout.
- * For documentation contributions, follow the general structure, language, and tone of the [existing docs](https://github.com/finos-labs/{project name}/wiki).
- * Keep commits small and cohesive - if you have multiple contributions, please submit them as independent commits (and ideally as independent PRs too).
- * Reference issues if your PR has anything to do with an issue (even if it doesn't address it).
- * Minimise non-functional changes (e.g. whitespace).
- * Ensure all new files include a header comment block containing the [Apache License v2.0 and your copyright information](http://www.apache.org/licenses/LICENSE-2.0#apply).
- * If necessary (e.g. due to 3rd party dependency licensing requirements), update the [NOTICE file](https://github.com/finos/{project name}/blob/master/NOTICE) with any new attribution or other notices
+Open a new issue: https://github.com/mks1313/CreditGoose-Finos.git
 
+> Use the provided template for bug reports or feature requests, and delete the one that doesn’t apply.  
+> Please label your issue accordingly ("Bug" or "Enhancement").
 
-### Commit and PR Messages
+Use Markdown formatting to improve readability.  
+Code blocks (```...```) for logs or error messages help a lot.
 
-* **Reference issues, wiki pages, and pull requests liberally!**
-* Use the present tense ("Add feature" not "Added feature")
-* Use the imperative mood ("Move button left..." not "Moves button left...")
-* Limit the first line to 72 characters or less
+---
+
+## 🔁 Contributing Pull Requests (Code & Docs)
+
+To make review easier:
+
+- Make sure your PRs merge cleanly
+- Keep commits small, focused, and logical
+- Follow the existing code and folder structure
+- For documentation: use the same tone and formatting as the rest of the docs
+- Reference related issues when possible
+- Avoid unnecessary changes (e.g., whitespace-only edits)
+
+### Commit Style
+
+- Use the **imperative mood**: `Add login button`, not `Added login button`
+- Reference issues or pull requests when relevant
+- Limit the first line to **72 characters**
+
+---
+
+## 🧾 Legal Notice
+
+Make sure any new files include an Apache License v2.0 header if appropriate.  
+If you add code with third-party dependencies, ensure they are Apache-compatible and update the [NOTICE](./NOTICE) file if attribution is required.
