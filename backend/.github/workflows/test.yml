@@ -1,0 +1,28 @@
+name: Run Node.js tests
+
+on:
+  push:
+    branches:
+      - feature/*     # на фичах
+  pull_request:
+    branches:
+      - master        # когда открывается PR в мастер
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run tests
+        run: npm test

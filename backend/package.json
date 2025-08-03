@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-deploy",
+  "version": "1.0.0",
+  "description": "Node.js on DO using Docker and Github Actions",
+  "author": "First Last <first.last@example.com>",
+  "main": "server.js",
+  "scripts": {
+    "start": "node api/index.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.1.1"
+  }
+}
