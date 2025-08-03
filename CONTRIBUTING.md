@@ -4,7 +4,8 @@ CreditGoose is [Apache 2.0 licensed](./LICENSE) and accepts contributions via Gi
 Each commit must include a DCO line in the git commit message:
 
 ```
-Signed-off-by: Maksim Marinov mg.marinov@gmx.es
+Replace "Your Name" and "your.email@example.com" with your real name and email address used in Git.
+
 ```
 
 This sign-off means you agree that your commit satisfies the [Developer Certificate of Origin (DCO)](https://developercertificate.org/).  
