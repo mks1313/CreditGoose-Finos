@@ -1,52 +1,80 @@
-![badge-labs](https://user-images.githubusercontent.com/327285/230928932-7c75f8ed-e57b-41db-9fb7-a292a13a1e58.svg)
+# CreditGoose
 
-<img align="right" width="40%" src="https://www.finos.org/hubfs/FINOS/finos-logo/FINOS_Icon_Wordmark_Name_RGB_horizontal.png">
+![FINOS Labs](https://img.shields.io/badge/FINOS%20Labs-Incubating-blue)
 
-# FINOS Software Project Blueprint
+CreditGoose is a lightweight financial tool designed to manage and analyze invoice funding workflows for small businesses and analysts.  
+This project was initiated during a FINOS Labs hackathon and follows the [project-blueprint](https://github.com/finos-labs/project-blueprint) structure.
 
-Project blueprint is a GitHub repository template for all [Fintech Open Source Foundation (FINOS)](https://www.finos.org/) hosted GitHub repositories, contributed and maintained by FINOS as part of the [Open Developer Platform (ODP)](https://odp.finos.org) initiative.
-
-
-## Using DCO to sign your commits
-
-All commits must be signed with a DCO signature to avoid being flagged by the DCO Bot. This means that your commit log message must contain a line that looks like the following one, with your actual name and email address:
+## 📁 Project Structure
 
 ```
-Signed-off-by: John Doe <john.doe@example.com>
+creditgoose-finos/
+├── frontend/   # React app (invoice submission, status tracking)
+├── backend/    # Express API (business logic, data handling)
+├── docs/       # (optional) Technical docs and architecture
 ```
 
-Adding the `-s` flag to your `git commit` will add that line automatically. You can also add it manually as part of your commit log message or add it afterwards with `git commit --amend -s`.
+## 🚀 Getting Started
 
-### Helpful DCO Resources
-- [Git Tools - Signing Your Work](https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work)
-- [Signing commits
-](https://docs.github.com/en/github/authenticating-to-github/signing-commits)
+### 1. Clone the repository
 
+```
+git clone https://github.com/finos-labs/creditgoose.git
+cd creditgoose
+```
 
-## How to use this blueprint
+### 2. Install & run the frontend
 
-1. Clone this repository locally (`git clone https://github.com/finos-labs/project-blueprint.git`)
-2. Copy the `LICENSE`, `LICENSE.spdx`, and `NOTICE` files, as well as the entire `.github` directory, to your own repository (do _not_ copy this `README.md` file).
-3. Copy the `README.template.md` file to your repository, and rename it to `README.md`.
-4. Search and replace the following tokens in the newly copied files:
+```
+cd frontend
+npm install
+npm run dev
+```
 
-  | Token                        | Replace with                                                      |
-  | ---------------------------- | ----------------------------------------------------------------- |
-  | `{project name}`             | The name of the GitHub repository the project resides in.         |
-  | `{yyyy}`                     | The year you started working on the code.                         |
-  | `{current_year}`             | The current year.                                                 |
-  | `{name of copyright owner}`  | The copyright owner of the code (typically you or your employer). |
-  | `{email of copyright owner}` | The email address of the copyright owner of the code (if known).  |
+Then open http://localhost:3000
 
-5. Open the `NOTICE` file in a text editor and either remove the `{Other notices, as necessary}` token, or [add attributions if required by your code's dependencies](https://finosfoundation.atlassian.net/wiki/spaces/FINOS/pages/75530255/License+Categories).
-6. Open the `README.md` file in a text editor and complete the content as appropriate for your project.
-7. Add the [Apache license header to all of your source files](https://www.apache.org/licenses/LICENSE-2.0.html#apply).
-8. Commit all of your changes.
+### 3. Install & run the backend
 
-## License
+In a separate terminal:
 
-Copyright 2020 Fintech Open Source Foundation
+```
+cd backend
+npm install
+npm run dev
+```
 
-Distributed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
+The API runs at http://localhost:5000
+
+## 🛠 Tech Stack
+
+- Frontend: React, Vite, Tailwind CSS
+- Backend: Node.js, Express.js
+- Language: JavaScript (ES6+)
+
+## 🤝 Contributing
+
+We welcome contributions!
+
+Please read our [CONTRIBUTING.md](./CONTRIBUTING.md) file for guidelines, including the Developer Certificate of Origin (DCO).
+
+All commits must be signed using:
+
+```
+git commit -s -m "your message"
+```
+
+## 📝 License
+
+This project is licensed under the [Apache 2.0 License](./LICENSE).
 
 SPDX-License-Identifier: [Apache-2.0](https://spdx.org/licenses/Apache-2.0)
+
+## 📢 Contact
+
+For questions or collaboration, open an issue or contact the maintainers via [FINOS Labs](https://www.finos.org/labs).
+
+## 🧪 Related Projects
+
+This repo follows the structure of other FINOS Labs projects, such as  
+[dtcc-i-h-2025-aura](https://github.com/finos-labs/dtcc-i-h-2025-aura)
+
