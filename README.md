@@ -91,7 +91,10 @@ For additional contribution guidelines, see [CONTRIBUTING.md](./CONTRIBUTING.md)
 ## 👨‍🔧 Maintainers
 
 - **Maksim Marinov** ([mks1313](https://github.com/mks1313))
-- **Francesco** ([framosco0](https://github.com/framosco0))
+- **Francesco Moscogiu** ([framosco0](https://github.com/framosco0))
+- **Arkady Volovich** ([Arvo-go](https://github.com/Arvo-go))
+- **Ilya Zubkov** ([izubkov](https://github.com/izubkov))
+- **Elena Madalina Moise** ([elenamoise](https://github.com/elenamoise))
 
 ---
 
