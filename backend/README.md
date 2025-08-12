@@ -6,7 +6,7 @@ This backend is prepared to integrate with [Goose CLI](https://github.com/llm-go
 
 To run Goose locally alongside the backend:
 
-1. Install Goose from its [official repository]([https://github.com/llm-goose/goose](https://github.com/block/goose).
+1. Install Goose from its [official repository]([https://github.com/llm-goose/goose](https://github.com/block/goose)).
 2. Configure the `goose/config.yaml` file.
 3. Make sure the `/goose` route is enabled in `api/index.js` (uncomment the relevant lines).
 4. Start both services (backend + Goose) in parallel, using Docker or custom npm scripts.
